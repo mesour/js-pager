@@ -15,6 +15,10 @@ module.exports = {
 				test: /.jsx$/,
 				loader: 'babel',
 				include: path.resolve(__dirname, 'src')
+			},
+			{
+				test: /\.sass$/,
+				loaders: ['style-loader', 'css-loader', 'sass-loader']
 			}
 		]
 	},
